@@ -1,1 +1,2360 @@
-hello
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <title></title>
+    <link href="https://i.imgur.com/hm7QMr7.png" rel="apple-touch-icon"/>
+    <link href="https://i.imgur.com/hm7QMr7.png" rel="shortcut icon" type="image/x-icon"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="title" content="" />
+    <meta name="robots" content="index, follow">
+    <meta property="fb:app_id" content="" />
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="">
+    <!--begin::Global Theme Styles(used by all pages)-->
+    <link rel="stylesheet" href="/assets/clmm/css2/bootstrap.min.css?v=1.2.4">
+    <link rel="stylesheet" href="/assets/clmm/css2/style.css?v=1.2.4">
+    <link rel="stylesheet" href="/assets/clmm/js/libs/css/ui-lightness/jquery-ui-1.9.2.custom.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.2.0/css/font-awesome.css">
+    <link rel="stylesheet" href="/assets/clmm/css2/custom.1.css?v=1.2.4">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.css" />
+    <script type="text/javascript" src="https://gc.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=jNieP5vCgekVEtceCjeNBbj8trLxnHy22Hj9o2QrDmdgti4do8etKkZkJaB73v3W" charset="UTF-8"></script><style>
+		::root{
+			--main-color: f00;
+		}
+        .footer {
+            padding: 10px 0;
+            margin-top: 2em;
+            font-size: 12px;
+            background: var(--main-color);
+        }
+        .navbar {
+            position: relative;
+            z-index: 501;
+            min-height: 60px;
+            margin-bottom: 0;
+            background-color: var(--main-color);
+            border: none;
+            border-top-right-radius: 0;
+            border-top-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-bottom-left-radius: 0
+        }
+        
+        .mainbar {
+            width: 100%;
+            padding: 5px 0;
+            text-align: center;
+            background: var(--main-color);
+            border-bottom: 10px solid #fff;
+        }
+        
+        .btn-default {
+            color: #fff;
+            background-color: var(--main-color);
+            border-color: var(--main-color);
+        }
+        
+        .panel-primary {
+            border-color: var(--main-color)
+        }
+
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color: var(--main-color);
+            border-color: var(--main-color)
+            border-top-right-radius: 15px;
+            border-top-left-radius: 15px;
+        }
+        
+        .panel-primary>.panel-heading+.panel-collapse .panel-body {
+            border-top-color: var(--main-color)
+        }
+
+        .panel-primary>.panel-footer+.panel-collapse .panel-body {
+            border-bottom-color: var(--main-color)
+        }
+        .aa:hover,.aa:focus {
+            background: var(--main-color);
+            border-radius: 5px
+        }
+        .bg-primary {
+            color: #fff ;
+            background-color: var(--main-color) !important;
+        }
+        .btn-secondary {
+            color: #fff;
+            background-color: var(--main-color);
+            border-color: var(--main-color);
+        }
+        
+        .table-bordered thead tr th,.table-bordered tfoot tr th {
+            color: var(--main-color);
+            font-size: 13px;
+            font-weight: 800;
+            background-color: transparent;
+            border-bottom-width: 1px;
+            vertical-align: middle
+        }
+        
+        .coffer-box {
+            display: block;
+            position: fixed;
+            bottom: 90px;
+            right: 15px;
+            width: 15%;
+            z-index: 1000;
+            cursor: pointer;
+            /*background: #ad410569;*/
+            border-radius: 10px;
+            text-align: center;
+            padding: 15px;
+        }
+        @media (max-width: 767px) {
+            .coffer-box {
+                background: unset;
+                width: 50%;
+                bottom: 20px;
+            }
+        }
+        .mb-0 {
+            margin-bottom: 0;
+        }
+        .dot-text-1 {
+            color: #f0ad4e
+        }
+        .dot-text-2 {
+            color: #5bc0de
+        }
+        .dot-text-3 {
+            color: #5cb85c
+        }
+        .dot-text-4 {
+            color: #d9534f
+        }
+        
+        .dot-text-6 {
+            color: #5bc0de
+        }
+        .dot-text-7 {
+            color: #5cb85c
+        }
+        .dot-text-8 {
+            color: #d9534f
+        }
+        .dot-text-9 {
+            color: #f0ad4e
+        }
+        
+        .dot-text-11 {
+            color: #5cb85c
+        }
+        .dot-text-12 {
+            color: #d9534f
+        }
+        .dot-text-13 {
+            color: #f0ad4e
+        }
+        .dot-text-14 {
+            color: #5bc0de
+        }
+        
+        .dot-text-16 {
+            color: #d9534f
+        }
+        .dot-text-17 {
+            color: #f0ad4e
+        }
+        .dot-text-18 {
+            color: #5bc0de
+        }
+        .dot-text-19 {
+            color: #5cb85c
+        }
+        
+
+
+		
+		body {
+            background: url(/assets/clmm/images/bg.jpg) bottom center no-repeat fixed;
+            background-size: cover;
+            color: #fff;
+            position: relative;
+            padding-bottom: 32px;
+        }
+        
+        body:before {
+            content: "";
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background: linear-gradient(45deg, black, #00000085);
+        }
+        
+        .content-container {
+            margin-top: 40px;
+        }
+        
+        .content {
+            position: relative;
+            width: 100%;
+            padding-top: 20px;
+            background: #8b8b8b29;
+        }
+        
+        .mainbar {
+            background: #000000d9;
+            border-bottom: 1px solid #000;
+            height: 0px;
+        }
+        
+        .navbar {
+            background-color: #e91d1dd9;
+        }
+        
+        .table-bordered {
+            border: 1px solid #898989;
+            color: #fff;
+            font-size: 14px;
+        }
+        
+        .table-hover>tbody>tr:hover>td,
+        .table-hover>tbody>tr:hover>th,
+        .table-hover>tbody>tr:nth-child(odd):hover>td,
+        .table-hover>tbody>tr:nth-child(odd):hover>th {
+            background-color: #464646;
+        }
+        
+        .table-striped>tbody>tr:nth-child(odd)>td,
+        .table-striped>tbody>tr:nth-child(odd)>th {
+            background-color: #00000075;
+        }
+        
+        .table-bordered>thead>tr>th,
+        .table-bordered>tbody>tr>th,
+        .table-bordered>tfoot>tr>th,
+        .table-bordered>thead>tr>td,
+        .table-bordered>tbody>tr>td,
+        .table-bordered>tfoot>tr>td {
+            border: 1px solid #484848;
+        }
+        
+        .panel-primary>.panel-heading {
+            color: #fff;
+            background-color: #de2d38;
+            border-radius: 15px 15px 0px 0px;
+            overflow: hidden;
+        }
+        
+        .panel-primary {
+            border-color: #de2d38;
+        }
+        
+        .panel {
+            margin-bottom: 20px;
+            background-color: #40404059;
+            border: 1px solid transparent;
+            color: #fff;
+        }
+        
+        body .bg-primary {
+            color: #fff;
+            background-color: #de2d38 !important;
+        }
+        
+        .btn-default {
+            color: #fff;
+            background-color: #464646;
+            border-color: #3e3e3e;
+        }
+        
+        .btn-primary {
+            color: #fff;
+            background-color: #ff0000;
+            border-color: #de2d38;
+            border-radius: 5px;
+            color: #ff0;
+        }
+        
+        .footer {
+            padding: 10px 0 0px;
+            margin-top: 2em;
+            font-size: 12px;
+            background: #1e1e1e;
+        }
+        
+        .text-danger {
+            color: #ff0904;
+        }
+        
+        .panel h3,
+        .panel h4 {
+            margin: 0px;
+        }
+        
+        .modal-content {
+            background-color: #482e2ed1;
+        }
+        
+        .btn-secondary {
+            color: #fff;
+            background-color: #e51b2d;
+            border-color: #e51b2d;
+        }
+        
+        .close {
+            color: #fff;
+            text-shadow: 0 1px 0 #fff;
+            opacity: 1;
+        }
+        
+        .alert-danger {
+            background-color: #de2d38a3;
+            border-color: #de2d388c;
+            color: #ffffff;
+        }
+        
+        .alert-info {
+            background-color: #0a99e19e;
+            border-color: #005f97;
+            color: #ffffff;
+        }
+        
+        .form-control {
+            color: #555;
+            background-color: #ffffff12;
+            border: 1px solid #999;
+        }
+        
+        .btn-primary:hover,
+        .btn-primary:focus,
+        .btn-primary:active,
+        .btn-primary.active,
+        .open .dropdown-toggle.btn-primary {
+            color: #fff;
+            background-color: #ffbd02;
+            border-color: #ffc800;
+        }
+        
+        .label-success {
+            background-color: #ff00009e;
+        }
+        
+        .table-bordered .fa-circle {
+            color: #464646;
+        }
+        
+        .output {
+            text-align: center;
+            color: #ef1e9d;
+        }
+        
+        #QuaTang {
+            margin-top: 0.5rem;
+            color: #155724;
+            background-color: #cdcdcd1c;
+            border-color: #000000;
+        }
+        
+        #osdt {
+            margin-top: 0.5rem;
+            color: #ffffff;
+            background-color: #0000004f;
+            border-color: #000000;
+            padding: 20px;
+        }
+        
+        #QuaTang {
+            margin-top: 0.5rem;
+            color: #155724;
+            background-color: #bff9cd30;
+            border-color: #c3e6cb;
+        }
+        
+        #osdt {
+            margin-top: 0.5rem;
+            color: #155724;
+            background-color: #0808088c;
+            border-color: #c3e6cb;
+            padding: 20px;
+        }
+        
+        #othuong {
+            margin-top: 0.5rem;
+            color: #155724;
+            background-color: #9cbca4;
+            border-color: #c3e6cb;
+            padding: 20px;
+        }
+        .occho {
+            margin-top: 0.5rem;
+            color: #18dd45;
+            background-color: #294a3161;
+            border-color: #44764f;
+            padding: 20px;
+        }
+        .panel-primary>.panel-heading, .panel-danger>.panel-heading{
+            background-color: transparent;
+            border-radius: 2px 2px 0px 0px;
+        }
+        </style>
+    <style>
+        .present{
+            background: #bb0202;
+        }
+        button.present:hover, button.nv:hover{
+            background: #fff;
+            color: #000;
+        }
+    </style>
+	</head>
+	<body class="">
+		<div class="navbar">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+        <i class="fa fa-bars"></i>
+        </button>
+        <a class="navbar-brand navbar-brand-image" href="/">
+        <div class="hidden-xs">
+            <img src="/assets/clmm/images/logo-1.png" style="margin-top: -5px;margin-bottom: 10px;width: 160px;" alt="clmm Logo">
+        </div>
+        <div class="visible-xs">
+            <img src="/assets/clmm/images/logo-1.png" style="margin-top: -0px;/* margin: 10px; */width: 160px;" alt="clmm Logo">
+        </div>
+        </a>
+    </div>
+    </div>
+</div>
+<div class="mainbar hidden-xs">
+    <div class="container"></div>
+</div>				<div class="app-container">
+			
+<div class="container">
+    <div class="content">
+        <div class="content-container">
+            <div class="py-5" style="min-height:80px !important;">
+                <div class="output" id="output">
+                    <h3 class="cursor"></h3>
+                    <h4></h4>
+                    <strong class="text-primary-2">Mỗi Lần Chơi AE Chú Ý Load Lại WEB Lấy Số Chơi Nhá</strong>
+                </div>
+            </div>
+            <div class="text-center mt-3">
+                            </div>
+            <div class="text-center mt-5">
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="1" server-rate="1"> Chẵn lẻ </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="2" server-rate="2"> Chẵn lẻ 2 - Tài Xỉu 2 </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="3" server-rate="3"> Tài Xỉu </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="5" server-rate="5"> Tổng 3 Số </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="6" server-rate="6"> 1 phần 3 </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="22" server-rate="22"> H3 </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="23" server-rate="23"> XSMB </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="24" server-rate="24"> Đoán Số </button> 
+             
+                <button class="btn btn-default btn-primary mt-1 hidden" server-action="change" server-id="25" server-rate="25"> Lồng - Đèn </button> 
+             
+            </div>
+            <div class="text-center mt-5">
+                <button class="btn btn-lg mt-1 btn-outline-primary present" server-action="change" server-id="attendance" server-rate="attendance" style=" padding-bottom: 20px; position: relative;">Điểm danh
+                    <b class="text-danger" style="position: absolute;margin-left: auto;margin-right: auto;text-align: center;left: 0px;right: 0px;top: 31px;font-size: 9px;"><font color="drak">(Comming soon)</font></b>
+                </button>
+                                <button class="btn btn-lg btn-outline-primary mt-1 btn-success nv" server-action="change" server-id="nvhn" server-rate="nvhn" style=" padding-bottom: 20px; position: relative;">Nhiệm Vụ Ngày
+                    <b class="text-danger" style="position: absolute;margin-left: auto;margin-right: auto;text-align: center;left: 0px;right: 0px;top: 31px;font-size: 9px;"><font color="red">(HOT)</font></b>
+                </button>
+                                            </div>
+            <div class="row justify-content-md-center box-cl">
+                <div class="col-md-3 mt-3 text-center cl">
+                    <div class="panel panel-primary"> 
+                        <div class="panel-heading text-center"><h4>Cách chơi</h4></div>
+                                                                                                                
+                                                            <div class="panel-body turn active" turn-tab="nvhn" style="padding-top: 0px;">
+                                    <div class="row collapse show" id="QuaTang" style="">
+                                        <div class="col-lg-12">
+                                            <div class="body">
+                                                <div class="text-center">
+                                                    <b style="font-size: 15px;color: #fff;">Nhiệm Vụ Ngày</b>
+                                                    <br>
+                                                    <div class="form-group occard" id="osdt">
+                                                        <label for="exampleInputEmail1">Số điện thoại:</label>
+                                                        <form role="form" id="diemdanh" method="">
+                                                            <input type="text" class="form-control" id="PhoneChoi" name="PhoneChoi" aria-describedby="emailHelp" placeholder="113">
+                                                            <small id="emailHelp" class="form-text text-muted">Nhập số điện thoại của bạn để điểm danh.</small>
+                                                            <br>
+                                                            <button type="button" id="submit" name="submit" class="btn btn-primary mb-2" onclick="choilanhan()">Kiểm tra</button>
+                                                            <div id="result-check1" style="margin-top: 5px;"></div>
+                                                        </form>
+                                                    </div>
+                                                    <div class="form-group occard" id="othuong" style="display:none;">
+                                                    </div>
+                                                </div>
+                                                <div class="occho" id="fghdh">
+                                                    - Thật tuyệt vời ! Mỗi ngày chỉ cần chơi trên
+                                                    TX88.ONE chắc chắn bạn sẽ nhận được tiền.
+                                                    <br> - Khi chơi đủ số tiền (ko cần biết thắng thua) chắc chắn sẽ nhận được tiền.
+                                                    <br> - Hãy nhập số điện thoại của bạn vào mục bên trên để kiểm tra đã chơi bao nhiêu nhé. Chú ý : Phải nhập sdt là số cũ vd: 082xxx -&gt; 0129xxx , 03xxx -&gt; 016...
+                                                    <br> - Khi chơi đủ mốc tiền, các bạn ấn vào nhận thưởng để nhận được các mốc như sau:
+
+                                                    <div class="table-responsive">
+                                                        <table class="table table-striped table-bordered table-hover text-center">
+                                                            <thead>
+                                                                <tr role="row" class="bg-primary">
+                                                                    <th class="text-center text-white">Mốc chơi</th>
+                                                                    <th class="text-center text-white">Thưởng</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody id="zzxc">
+                                                                                                                                <tr><td>1,000,000</td> <td><font color="red">+22,222</font></td></tr>
+                                                                
+                                                                                                                                <tr><td>5,000,000</td> <td><font color="red">+44,444</font></td></tr>
+                                                                
+                                                                                                                                <tr><td>12,000,000</td> <td><font color="red">+88,888</font></td></tr>
+                                                                
+                                                                                                                                <tr><td>29,000,000</td> <td><font color="red">+166,666</font></td></tr>
+                                                                
+                                                                                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                 
+                                    <div class="panel-body turn" turn-tab="25"> 
+                                        <p>Lồng - Đ&egrave;n l&agrave; game t&iacute;nh theo kết quả xsmb , đặt cược trước 17h50</p>
+
+<p>C&uacute; ph&aacute;p Đ&egrave;n : Den (số muốn đ&aacute;nh x số Đ&egrave;n ) VD: Den 88 68 x20đ&egrave;n ( nghĩa l&agrave; 88 cược 20k v&agrave; 68 cược 20k )</p>
+
+<p>C&uacute; ph&aacute;p Lồng : Long ( số muốn đ&aacute;nh x số Lồng ) VD : Long 88 68 x10L ( nghĩa l&agrave; 88 cược 10L v&agrave; 68 cược 10L ) ( 1L=22500đ )</p>
+
+<p>Trong trường hợp người chơi muốn chơi kh&ocirc;ng c&ugrave;ng gi&aacute; trị cược th&igrave; c&oacute; thể thay ở tren nội dung lu&ocirc;n l&agrave; 88x10L 68x5L</p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table25" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>10,000 VNĐ</td>
+                                                    <td>2,000,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>10,000 VNĐ</td>
+                                                    <td>2,000,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>10,000 VNĐ</td>
+                                                    <td>2,000,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> DEN </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">XSMB</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x75</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> LONG </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">XSMB</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3.5</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 10,000 </b> và lớn nhất <b> 2,000,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="24"> 
+                                        <p>-&nbsp;<strong>Đo&aacute;n số</strong>&nbsp;l&agrave; game v&ocirc; c&ugrave;ng đơn giản&nbsp;, t&iacute;nh kết quả bằng <strong>1 số cuối</strong>&nbsp;m&atilde; giao dịch&nbsp;</p>
+
+<p><strong>- Số cuối&nbsp;</strong>m&atilde; giao dịch tr&ugrave;ng với nội dung game l&agrave; bạn thắng&nbsp;</p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table24" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> M9 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">9</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> M8 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">8</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id=""><b> M7 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">7</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id=""><b> M6 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">6</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id=""><b> M5 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">5</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-6"> </span><span class="fa-stack-1x text-white" id=""><b> M4 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">4</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-7"> </span><span class="fa-stack-1x text-white" id=""><b> M3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">3</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-8"> </span><span class="fa-stack-1x text-white" id=""><b> M2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">2</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-9"> </span><span class="fa-stack-1x text-white" id=""><b> M1 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">1</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-10"> </span><span class="fa-stack-1x text-white" id=""><b> M0 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">0</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 5,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="23"> 
+                                        <p>&nbsp;</p>
+
+<p>- Số sẽ được thay đổi v&agrave;o 18h30 hằng ng&agrave;y theo bảng xsmb truyền thống.</p>
+
+<p>- Game Xsmb l&agrave; một game v&ocirc; c&ugrave;ng dễ, t&iacute;nh kết quả bằng&nbsp;<strong>2 số cuối m&atilde; giao dịch.&nbsp;</strong></p>
+
+<p><strong>- NỘI DUNG GHI : XSMB</strong></p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table23" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> XSMB </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">41</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">48</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> XSMB </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">02</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">10</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">15</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">17</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">33</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-6"> </span><span class="fa-stack-1x text-white" id="">38</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-7"> </span><span class="fa-stack-1x text-white" id="">49</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-8"> </span><span class="fa-stack-1x text-white" id="">53</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-9"> </span><span class="fa-stack-1x text-white" id="">54</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-10"> </span><span class="fa-stack-1x text-white" id="">60</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-11"> </span><span class="fa-stack-1x text-white" id="">62</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-12"> </span><span class="fa-stack-1x text-white" id="">63</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-13"> </span><span class="fa-stack-1x text-white" id="">71</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-14"> </span><span class="fa-stack-1x text-white" id="">75</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-15"> </span><span class="fa-stack-1x text-white" id="">77</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-16"> </span><span class="fa-stack-1x text-white" id="">79</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-17"> </span><span class="fa-stack-1x text-white" id="">84</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-18"> </span><span class="fa-stack-1x text-white" id="">85</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-19"> </span><span class="fa-stack-1x text-white" id="">87</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-20"> </span><span class="fa-stack-1x text-white" id="">89</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-21"> </span><span class="fa-stack-1x text-white" id="">90</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-22"> </span><span class="fa-stack-1x text-white" id="">95</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-23"> </span><span class="fa-stack-1x text-white" id="">96</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3.5</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 5,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="22"> 
+                                        <p>-&nbsp;<strong>H3</strong>&nbsp;l&agrave; một game t&iacute;nh kết quả bằng&nbsp;<strong>hiệu 2 số cuối m&atilde; giao dịch</strong>.</p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table22" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> H3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">90</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x10</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> H3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">70</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">81</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">92</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x7</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id=""><b> H3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">50</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">61</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">72</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">83</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">94</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x5</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id=""><b> H3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">30</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">41</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">52</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">63</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">74</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-6"> </span><span class="fa-stack-1x text-white" id="">85</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-7"> </span><span class="fa-stack-1x text-white" id="">96</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 5,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="6"> 
+                                        <p>-&nbsp;<strong>1 phần 3</strong>&nbsp;l&agrave; một game t&iacute;nh kết quả bằng&nbsp;1&nbsp;<strong>số cuối m&atilde; giao dịch&nbsp;</strong></p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table6" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> N1 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">1</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">2</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">3</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3.1</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> N2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">4</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">5</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">6</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3.1</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id=""><b> N3 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">7</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">8</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">9</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3.1</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id=""><b> N0 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">0</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x6</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 5,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="5"> 
+                                        <p>- <strong>Tổng 3 số</strong>&nbsp;l&agrave; game v&ocirc; c&ugrave;ng dễ lấy <strong>Tổng 3 số cuối m&atilde; giao dịch&nbsp;</strong>l&agrave;m kết quả</p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table5" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>5,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> S </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">7</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">17</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">27</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x2</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> S </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">8</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">18</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x3</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id=""><b> S </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">9</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">19</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x4</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 5,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="3"> 
+                                        <p>-&nbsp;<strong>T&agrave;i Xỉu</strong>&nbsp;l&agrave; một game t&iacute;nh kết quả bằng&nbsp;<strong>1 số cuối m&atilde; giao dịch</strong>.</p>
+
+<p>-&nbsp;<strong>Mỗi game c&oacute; hạn mức kh&aacute;c nhau n&ecirc;n anh em ch&uacute; &yacute;</strong></p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table3" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> X </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">1</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">2</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">3</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">4</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x2.35</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> T </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">5</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">6</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">7</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">8</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x2.35</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 1,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="2"> 
+                                        <p>-&nbsp;<strong>CHẴN LẺ 2 - T&Agrave;I XỈU 2 (C2, L2, T2, X2) chỉ chơi tối đa 200.000, chuyển qu&aacute; sẽ kh&ocirc;ng được t&iacute;nh</strong></p>
+
+<p>-&nbsp;Chẵn lẻ 2 l&agrave; game&nbsp;t&iacute;nh 1 số cuối m&atilde; giao dịch</p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table2" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> L2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">1</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">3</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">5</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">7</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">9</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x1.96</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> C2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">0</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">2</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">4</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">6</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">8</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x1.96</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id=""><b> X2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">0</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">1</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">2</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">3</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">4</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x1.96</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id=""><b> T2 </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">5</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">6</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">7</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">8</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-5"> </span><span class="fa-stack-1x text-white" id="">9</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x1.96</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 1,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                     
+                                    <div class="panel-body turn" turn-tab="1"> 
+                                        <p>-&nbsp;<strong>Chẵn lẻ</strong>&nbsp;l&agrave; một game t&iacute;nh kết quả bằng&nbsp;<strong>1 số cuối m&atilde; giao dịch</strong>.</p>
+
+<p><strong>- Mỗi game c&oacute; hạn mức kh&aacute;c nhau n&ecirc;n anh em ch&uacute; &yacute;</strong></p>
+ 
+                                        Cách chơi vô cùng đơn giản : <br> 
+                                        - Chuyển tiền vào một trong các tài khoản ở <a href="#list" ><code> danh sách số</code></a> bên dưới <br> <br> 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Số điện thoại</th>
+                                                    <th class="text-center text-white">Cược tối thiểu</th>
+                                                    <th class="text-center text-white">Cược tối đa</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-table1" class=""> 
+                                                                                                    <tr>
+                                                    <td id="9">
+                                                            <b id="id_9" style="position: relative;">0568765675<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">1,251,390</font>/<font color="6861b1">30M</font>|<font color="green">18</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="8">
+                                                            <b id="id_8" style="position: relative;">0568766798<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">331,880</font>/<font color="6861b1">30M</font>|<font color="green">12</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                                                                        <tr>
+                                                    <td id="7">
+                                                            <b id="id_7" style="position: relative;">0568765650<b style="position: absolute;top: 15px;/* left: 1%; *//* margin: auto; */margin-left: auto;margin-right: auto;left: 0;right: 0;text-align: center;font-size: 9px;"><font color="green">3,026,606</font>/<font color="6861b1">30M</font>|<font color="green">49</font>/<font color="6861b1">150</font></b></b>
+                                                        <span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')">
+                                                        <i class="fa fa-clipboard" aria-hidden="true"></i>
+                                                        </span>
+                                                            
+                                                    </td>
+                                                    <td>1,000 VNĐ</td>
+                                                    <td>200,000 VNĐ</td>
+                                                    <tr> 
+                                                     
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                        <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b></div>
+                                        - Nội dung chuyển : 
+                                        <div class="table-responsive">
+                                            <table class="table table-striped table-bordered table-hover text-center">
+                                                <thead>
+                                                    <tr role="row" class="bg-primary">
+                                                    <th class="text-center text-white">Nội dung</th>
+                                                    <th class="text-center text-white">Số</th>
+                                                    <th class="text-center text-white">Tiền nhận</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody role="alert" aria-live="polite" aria-relevant="all" id="result-table" class=""> 
+                                                     
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id=""><b> L </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">1</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">3</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">5</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">7</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x2.35</b>
+                                                        </td>
+                                                        </tr>  
+                                                    <tr>
+                                                        <td>
+                                                            <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id=""><b> C </b></span></span>
+                                                        </td>
+                                                        <td> 
+                                                         <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-1"> </span><span class="fa-stack-1x text-white" id="">2</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-2"> </span><span class="fa-stack-1x text-white" id="">4</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-3"> </span><span class="fa-stack-1x text-white" id="">6</span></span> <span class="fa-stack"><span class="fa fa-circle fa-stack-2x dot-text-4"> </span><span class="fa-stack-1x text-white" id="">8</span></span> 
+                                                        </td>
+                                                        <td>
+                                                            <b>x2.35</b>
+                                                        </td>
+                                                        </tr>  
+                                                </tbody>
+                                            </table>
+                                        </div> 
+                                        - <b>Lưu ý:</b> Số tiền nhỏ nhất là <b> 1,000 </b> và lớn nhất <b> 200,000 </b>, nếu chuyển nhỏ hơn hoặc lớn hơn sẽ không được hoàn tiền. 
+                                    </div> 
+                                                                                    </div>
+                </div>
+                <div class="col-md-6 mt-3 cl">
+                    <div class="panel panel-danger">
+                        <div class="panel-heading text-center">
+                            <h4>DANH SÁCH SỐ MOMO</h4>
+                        </div>
+                        <div class="panel-body">
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover text-center">
+                                    <thead>
+                                        <tr role="row" class="bg-primary">
+                                            <th class="text-center text-white">Số điện thoại</th>
+                                            <th class="text-center text-white">Trạng thái</th>
+                                            <th class="text-center text-white">Hạn mức</th>
+                                            <th class="text-center text-white">Số GD</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-tablechung" class="">
+                                                                           <tr>
+                                         <td>
+                                             0568765675<span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765675')"><i class="fa fa-clipboard" aria-hidden="true"></i></span>
+                                         </td>
+                                         <td><span class="label label-success text-uppercase">Hoạt động</span></td>
+                                         <td>
+                                             1,251,390/30,000,000
+                                         </td>
+                                         <td> 
+                                         18/150
+                                         </td>
+                                       </tr>  
+                                                                               <tr>
+                                         <td>
+                                             0568766798<span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568766798')"><i class="fa fa-clipboard" aria-hidden="true"></i></span>
+                                         </td>
+                                         <td><span class="label label-success text-uppercase">Hoạt động</span></td>
+                                         <td>
+                                             331,880/30,000,000
+                                         </td>
+                                         <td> 
+                                         12/150
+                                         </td>
+                                       </tr>  
+                                                                               <tr>
+                                         <td>
+                                             0568765650<span class="label label-success text-uppercase" onclick="copyStringToClipboard('0568765650')"><i class="fa fa-clipboard" aria-hidden="true"></i></span>
+                                         </td>
+                                         <td><span class="label label-success text-uppercase">Hoạt động</span></td>
+                                         <td>
+                                             3,026,606/30,000,000
+                                         </td>
+                                         <td> 
+                                         49/150
+                                         </td>
+                                       </tr>  
+                                         
+                                    </tbody>
+                                </table>
+                                <div class="text-center font-weight-bold "><b>Làm mới sau <span class="text-danger coundown-time ">0</span> s</b></div>
+                                <center><font color="red "><b>Lưu ý: Mỗi sdt 1 ngày chỉ giao dịch được 200 lần và 30tr. Khi đạt 180 gd hoặc 25tr hệ thống sẽ tự đổi số.</b></font></center>
+                                <div class="alert alert-danger">
+                                    <p>Nếu qu&aacute; 10 ph&uacute;t&nbsp;chưa nhận được tiền vui l&ograve;ng d&aacute;n m&atilde; giao dịch v&agrave;o đ&acirc;y kiểm tra.&nbsp;</p>
+
+<p>Nếu qu&aacute; l&acirc;u chưa thấy trả thưởng h&atilde;y nhắn tin cho support để được ho&agrave;n tiền&nbsp;</p>
+
+<p>Qu&aacute; 24h kh&ocirc;ng ib cho support = die bill</p>
+                                </div>
+                                <div class="alert alert-info text-left"> Nếu quá 15 phút chưa nhận được tiền vui lòng dán mã vào đây để kiểm tra. </div>
+                                <div class="text-center">
+                                    <form role="form" id="check_tranid" method="">
+                                        <div class="form-group">
+                                            <label for="tran_id">Nhập mã giao dịch</label>
+                                            <input type="number" class="form-control" id="tran_id" name="tran_id" placeholder="Mã giao dịch: Ví dụ 11223344556">
+                                            <small id="checkHelp" class="form-text text-muted">Nhập mã giao dịch của bạn để kiểm tra.</small>
+                                        </div>
+                                        <button type="button" id="submit" name="submit" class="btn btn-primary mb-2" onclick="check_tranid()">Kiểm tra</button>
+                                        <div id="result-check" style="margin-top: 5px;"></div>
+                                    </form>
+                                </div>
+                                <p>
+                                    <span class="label label-success text-uppercase">Nhóm Chat giao lưu Zalo : <a class="text-white" href="" target="_blank">  </a>
+                                    </span>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+                        <div class="mt-5">
+                <div class="text-center mb-3">
+                    <h3 class="text-uppercase">LỊCH SỬ THẮNG</h3>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-striped table-bordered table-hover text-center">
+                        <thead>
+                            <tr role="row" class="bg-primary">
+                                <th class="text-center text-white">Thời gian</th>
+                                <th class="text-center text-white">Số điện thoại</th>
+                                <th class="text-center text-white">Tiền cược</th>
+                                <!--<th class="text-center text-white">Tiền nhận</th>-->
+                                <th class="text-center text-white">Trò chơi</th>
+                                <th class="text-center text-white">Nội dung </th>
+                                <th class="text-center text-white">Trạng thái</th>
+                            </tr>
+                        </thead>
+                        <tbody role="alert" aria-live="polite" aria-relevant="all" id="phone-tablehistory-table">
+                             
+                                <tr>
+                                    <td> 13-06-2022 13:28:35 </td>
+                                    <td>
+                                    <span> 0898904*** </span>
+                                    </td>
+                                    <td> 10,000 </td>
+                                    <!--<td>23,500</td>-->
+                                    <td> Tài Xỉu </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">X</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 21:24:43 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 5,000 </td>
+                                    <!--<td>11,750</td>-->
+                                    <td> Chẵn lẻ </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">C</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 21:26:26 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 15,000 </td>
+                                    <!--<td>35,250</td>-->
+                                    <td> Tài Xỉu </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">X</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 21:26:42 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 5,000 </td>
+                                    <!--<td>11,750</td>-->
+                                    <td> Tài Xỉu </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">T</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:50:33 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 5,000 </td>
+                                    <!--<td>10,000</td>-->
+                                    <td> Tổng 3 Số </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">S</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:51:01 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 5,000 </td>
+                                    <!--<td>10,000</td>-->
+                                    <td> Tổng 3 Số </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">S</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:56:06 </td>
+                                    <td>
+                                    <span> 0904794*** </span>
+                                    </td>
+                                    <td> 8,000 </td>
+                                    <!--<td>24,800</td>-->
+                                    <td> 1 phần 3 </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">N2</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:57:17 </td>
+                                    <td>
+                                    <span> 0904794*** </span>
+                                    </td>
+                                    <td> 9,000 </td>
+                                    <!--<td>27,900</td>-->
+                                    <td> 1 phần 3 </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">N3</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:58:39 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 5,000 </td>
+                                    <!--<td>11,750</td>-->
+                                    <td> Tài Xỉu </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">X</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                                <tr>
+                                    <td> 13-06-2022 22:59:03 </td>
+                                    <td>
+                                    <span> 0929012*** </span>
+                                    </td>
+                                    <td> 6,550 </td>
+                                    <!--<td>32,750</td>-->
+                                    <td> H3 </td>
+                                    <td><span class="fa-stack"><span class="fa fa-circle fa-stack-2x"></span><span class="fa-stack-1x text-white">H3</span></span>  </td>
+                                    <td>
+                                    <span class="label label-success text-uppercase">Thắng</span>
+                                    </td>
+                                </tr> 
+                             
+                        </tbody>
+                    </table>
+                    <div class="text-center font-weight-bold"><b>Làm mới sau <span class="text-danger coundown-time">0</span> s</b>
+                    </div>
+                </div>
+            </div>
+                        <hr style="margin-top: 25px; margin-bottom: 25px;">
+            <div class="row" id="list">
+                <div class="col-md-6 ">
+                    <div class="text-center mb-3">
+                        <h3 class="text-uppercase">LƯU Ý</h3>
+                    </div>
+                    <div class="panel panel-primary">
+                        <div class="panel-body" id="luuy_body">
+                            <p style="text-align: center;"><strong>&nbsp; &nbsp; &nbsp;TRƯỚC KHI CHƠI CÁC BẠN
+                                    CẦN LƯU Ý NHỮNG ĐIỀU SAU:</strong></p>
+                            <p style="text-align: center;">&nbsp; &nbsp; 1. Chẵn lẻ Tài xỉu số cuối mã giao dịch
+                                ra 0, 9 sẽ tính Thua, Nếu muốn có 0 và 9 vui lòng chơi Chẵn lẻ 2.</p>
+                            <p style="text-align: center;">&nbsp; &nbsp; 2. Mỗi số trên web chỉ có thể giao dịch
+                                tối đa <strong>40 triệu</strong> hoặc <strong>130 lần</strong> một ngày. Vì
+                                vậy,&nbsp;số trên hệ thống&nbsp;sẽ thay đổi liên tục nên&nbsp;trước khi chơi bạn
+                                hãy lên lấy số trước, Tránh trường hợp bị hoàn tiền.</p>
+                            <p style="text-align: center;">&nbsp; &nbsp; 3.&nbsp;Nếu chuyển sai hạn mức,&nbsp;số
+                                ngừng hoạt động, hãy sử dụng chức năng&nbsp;<strong>KIỂM TRA MÃ GIAO
+                                    DỊCH</strong> để được&nbsp;nhận lại tiền chơi .</p>
+                            <p style="text-align: center;">&nbsp; &nbsp; &nbsp; 4.&nbsp;Nếu bạn <strong><span style="color: #ff0000;">CẦN HỖ TRỢ, BÁO LỖI</span></strong>&nbsp;thì
+                                chat với Nhân viên của web tại <strong>Góc phải màn hình</strong> (24/7)</p>
+                            <p style="text-align: center;">5. Tham gia ngay&nbsp;<strong><a title="Click vào đây (Box hỗ trợ báo lỗi Telegram)" href="https://t.me/+R0TLGkQ5poY5NzRk">Box chat Telegram</a></strong> để
+                                nhận những thông báo mới nhất từ Web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="panel panel-danger ">
+                        <div class="panel-heading text-center ">
+                            <div class="row ">
+                                <div class="col-xs-6 ">
+                                <h4>TOP THÁNG</h4>
+                                </div>
+                                <div class="col-xs-6 ">
+                                <h4>
+                                    <span data-action="phan-thuong " class="label label-danger " style="cursor: pointer; ">
+                                    <i class="fa fa-gift "></i>&nbsp;&nbsp;Phần thưởng </span>
+                                </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel-body ">
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade " id="modalGift " tabindex="-1 " role="dialog " style="overflow: scroll; -webkit-overflow-scrolling: touch; ">
+        <div class="modal-dialog " role="document ">
+            <div class="modal-content ">
+                <div class="modal-header text-center ">
+                    <button type="button " class="close " data-dismiss="modal " aria-label="Close ">
+                    <span aria-hidden="true ">&times;</span>
+                    </button>
+                    <div class="modal-title ">
+                    <h2 class="text-danger ">
+                        <b>PHẦN THƯỞNG TOP</b>
+                    </h2>
+                    </div>
+                </div>
+                <div class="modal-body ">
+                                        <p>TOP sẽ dược trao vào 23h55 ngày cuối của THÁNG.</p>
+                    <p>Phần thưởng top :</p>  <p>- TOP 1 : 50,000 </p>  <p>- TOP 2 : 40,000 </p>  <p>- TOP 3 : 30,000 </p>  <p>- TOP 4 : 20,000 </p>  <p>- TOP 5 : 10,000 </p>                 </div>
+                <div class="modal-footer ">
+                    <button type="button " class="btn btn-danger " style="border-radius: 0; " data-dismiss="modal ">Đóng</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</div>
+
+		</div>
+    	<marquee width="100%" behavior="scroll" style="display: block;position: fixed;z-index: 1000;cursor: pointer;width: 100%;background: #a50000a6;left: 0px;bottom: 0px;"> <font color="white" style="text-shadow: 0 0 0.2em #ff0000, 0 0 0.2em #ff0000,  0 0 0.2em #ff0000">
+        <b>Hiện nay có rất nhiều Website lừa đảo, anh chú ý chỉ chơi trên TX88.ONE, không nên thử các web khác tránh mất tiền oan</b>
+    </font>
+</marquee>
+<!-- Modal -->
+<div class="modal fade" id="noticeModal" tabindex="-1" role="dialog" aria-labelledby="noticeModal" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="noticeModal">Thông Báo</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <h2>Ch&agrave;o mừng bạn đến với hệ thống Chẵn Lẻ MoMo !</h2>
+
+<p>&nbsp;<strong>Trước khi chơi,</strong><strong>&nbsp;</strong>bạn n&ecirc;n đọc kĩ những lưu &yacute; sau, nếu bỏ qua những lưu &yacute; n&agrave;y, th&igrave; khi&nbsp;<strong>mất tiền, lamgiau.me&nbsp;</strong>sẽ&nbsp;kh&ocirc;ng chịu tr&aacute;ch nhiệm.</p>
+
+<ol>
+	<li><strong><em>Chẵn lẻ t&agrave;i xỉu</em> số cuối m&atilde; giao dịch l&agrave; 0&nbsp;v&agrave; 9 l&agrave; thua, nếu muốn c&oacute; 0 v&agrave; 9 vui l&ograve;ng chơi chẵn lẻ 2 , t&agrave;i xỉu 2 </strong></li>
+	<li>Mỗi số tr&ecirc;n web chỉ c&oacute; thể giao dịch tối đa&nbsp;<strong>30tr</strong>&nbsp;<strong>hoặc</strong>&nbsp;&nbsp;<strong>200</strong><strong>&nbsp;lần</strong>&nbsp;một ng&agrave;y. V&igrave; vậy,&nbsp;<strong>số hệ thống</strong>&nbsp;thay đổi li&ecirc;n tục n&ecirc;n&nbsp;<strong>trước khi chơi</strong>&nbsp;bạn n&ecirc;n l&ecirc;n lấy số trước, nếu lỡ chuyển tiền v&agrave;o th&igrave; bạn vẫn sẽ được <strong>ho&agrave;n tiền thắng nhưng chỉ chậm hơn 5-10p, bạn chỉ cần l&ecirc;n web lấy số kh&aacute;c l&agrave; sẽ được done nhanh như b&igrave;nh thường</strong></li>
+	<li>Mỗi game&nbsp;c&oacute; một&nbsp;<strong>mức cược</strong>&nbsp;kh&aacute;c nhau, chuyển sai&nbsp;<strong>tiền cược&nbsp;</strong>bạn sẽ&nbsp;<strong>mất tiền&nbsp;</strong></li>
+	<li><strong>Nếu chuyển sai hạn mức</strong>,&nbsp; bạn sẽ đồng nghĩa với mất tiền.</li>
+	<li>Nh&oacute;m Zalo Support :&nbsp;<strong>https://zalo.me/g/qrvmqa841&nbsp;</strong></li>
+</ol>
+
+<p><em><strong>Khi bạn tắt ch&uacute; &yacute; n&agrave;y đi, đồng nghĩa với việc bạn đ&atilde; đọc v&agrave; chấp nhận những điều đ&oacute; !!</strong></em></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="footer ">
+    <div class="container ">
+    <div class="row ">
+        <div class="col-xs-6 text-white "> Copyright 2022 © | All rights reserved </div>
+    </div>
+    </div>
+</footer>
+<script src="/assets/clmm/js/libs/jquery-1.10.1.min.js"></script>
+<script src="/assets/clmm/js/libs/jquery-ui-1.9.2.custom.min.js"></script>
+<script src="/assets/clmm/js/jquery.validate.min.js"></script>
+<script src="/assets/clmm/js/libs/bootstrap.min.js"></script>
+<script>
+    var _0xc9e076 = _0x4d62;
+    (function(_0x56791a, _0x1999e8) {
+        var _0x185845 = _0x4d62,
+            _0x35e20b = _0x56791a();
+        while (!![]) {
+            try {
+                var _0x466a3c = -parseInt(_0x185845(0x1c5)) / 0x1 + -parseInt(_0x185845(0x1b3)) / 0x2 * (parseInt(_0x185845(0x18a)) / 0x3) + -parseInt(_0x185845(0x178)) / 0x4 * (-parseInt(_0x185845(0x181)) / 0x5) + -parseInt(_0x185845(0x17c)) / 0x6 * (-parseInt(_0x185845(0x173)) / 0x7) + -parseInt(_0x185845(0x1b4)) / 0x8 + -parseInt(_0x185845(0x194)) / 0x9 + parseInt(_0x185845(0x18b)) / 0xa;
+                if (_0x466a3c === _0x1999e8) break;
+                else _0x35e20b['push'](_0x35e20b['shift']());
+            } catch (_0x14e074) {
+                _0x35e20b['push'](_0x35e20b['shift']());
+            }
+        }
+    }(_0xd3c0, 0xe3886));
+
+    function _0x4d62(_0x55bb1f, _0x517ad8) {
+        var _0xd3c013 = _0xd3c0();
+        return _0x4d62 = function(_0x4d6242, _0x187ebb) {
+            _0x4d6242 = _0x4d6242 - 0x161;
+            var _0x7749f3 = _0xd3c013[_0x4d6242];
+            return _0x7749f3;
+        }, _0x4d62(_0x55bb1f, _0x517ad8);
+    }
+    var _0x2383a0 = _0x5a11;
+    (function(_0x39dfd4, _0x588281) {
+        var _0x3309fa = _0x4d62,
+            _0x35abf3 = _0x5a11,
+            _0x2fa3d6 = _0x39dfd4();
+        while (!![]) {
+            try {
+                var _0xceb656 = -parseInt(_0x35abf3(0x107)) / 0x1 * (parseInt(_0x35abf3(0xc4)) / 0x2) + parseInt(_0x35abf3(0xf2)) / 0x3 + -parseInt(_0x35abf3(0xfc)) / 0x4 + -parseInt(_0x35abf3(0x10e)) / 0x5 * (parseInt(_0x35abf3(0xf9)) / 0x6) + -parseInt(_0x35abf3(0xd3)) / 0x7 * (parseInt(_0x35abf3(0xdf)) / 0x8) + -parseInt(_0x35abf3(0x104)) / 0x9 * (parseInt(_0x35abf3(0xd9)) / 0xa) + parseInt(_0x35abf3(0xcf)) / 0xb;
+                if (_0xceb656 === _0x588281) break;
+                else _0x2fa3d6[_0x3309fa(0x16e)](_0x2fa3d6[_0x3309fa(0x193)]());
+            } catch (_0x992239) {
+                _0x2fa3d6['push'](_0x2fa3d6[_0x3309fa(0x193)]());
+            }
+        }
+    }(_0x57f7, 0xf3759), $(document)[_0x2383a0(0xe4)](function() {
+        var _0x32e50a = _0x4d62,
+            _0x7efbd1 = _0x2383a0,
+            _0xc8d4b6 = setInterval(myTimer, 0x3e8);
+        $(_0x7efbd1(0x10f))[_0x32e50a(0x17e)](_0x7efbd1(0xfd)), $(_0x7efbd1(0xfe))[_0x7efbd1(0xf7)](), $('button[data-action=huongdan]')[_0x32e50a(0x171)](_0x23ba7a => {
+            var _0x196c4a = _0x7efbd1;
+            $(_0x196c4a(0xeb))[_0x196c4a(0xdc)](_0x196c4a(0xfd));
+        }), $(_0x7efbd1(0x10c))[_0x7efbd1(0x109)](_0xabaf3d => {
+            var _0x3da664 = _0x7efbd1;
+            $(_0x3da664(0xd0))[_0x3da664(0xdc)]('show');
+        }), $('button[server-action=change]')[_0x7efbd1(0x109)](function() {
+            var _0x3c0631 = _0x32e50a,
+                _0x36a3c7 = _0x7efbd1;
+            let _0x2caf99 = $(this),
+                _0x56fc7a = _0x2caf99[_0x36a3c7(0xc6)](_0x36a3c7(0xff));
+            $(_0x36a3c7(0x106))[_0x36a3c7(0xec)](_0x36a3c7(0xe5)), $(_0x36a3c7(0xdd) + _0x56fc7a + ']')[_0x36a3c7(0xc9)](_0x3c0631(0x175)), $(_0x3c0631(0x1a4))[_0x36a3c7(0xc6)](_0x36a3c7(0xcb), _0x36a3c7(0xd1)), _0x2caf99[_0x36a3c7(0xc6)](_0x36a3c7(0xcb), _0x36a3c7(0xca));
+        }), $(_0x32e50a(0x186))[_0x7efbd1(0x109)]();
+    }));
+    var i = 0x0,
+        a = 0x0,
+        isBackspacing = ![],
+        isParagraph = ![],
+        textArray = [_0x2383a0(0xe7)],
+        speedForward = 0x0,
+        speedWait = 0x7530,
+        speedBetweenLines = 0xa,
+        speedBackspace = 0x0;
+    typeWriter(_0x2383a0(0xe6), textArray);
+    let cookie = getCookie(_0xc9e076(0x190));
+    !cookie && ($(_0x2383a0(0xf3))[_0x2383a0(0xdc)](_0x2383a0(0xfd)), setCookie('modal_alert', !![], 0.5));
+
+    function copyStringToClipboard(_0x286a7a) {
+        var _0x41f2d1 = _0xc9e076,
+            _0x58b3b1 = _0x2383a0,
+            _0x2f3575 = document[_0x58b3b1(0xcc)](_0x58b3b1(0xc2));
+        _0x2f3575[_0x58b3b1(0x10d)] = _0x286a7a, _0x2f3575[_0x41f2d1(0x198)](_0x41f2d1(0x166), ''), _0x2f3575[_0x41f2d1(0x18e)] = {
+            'position': _0x58b3b1(0xc5),
+            'left': _0x58b3b1(0xf6)
+        }, document[_0x41f2d1(0x1b9)][_0x41f2d1(0x19a)](_0x2f3575), _0x2f3575[_0x58b3b1(0xd8)](), document[_0x58b3b1(0xcd)](_0x41f2d1(0x1ba)), document[_0x58b3b1(0x101)][_0x58b3b1(0xea)](_0x2f3575), alert(_0x58b3b1(0x100));
+    }
+
+    function loadlist() {
+        var _0xc44ae0 = _0x2383a0;
+        $[_0xc44ae0(0xf8)]({
+            'type': _0xc44ae0(0xe0),
+            'url': _0xc44ae0(0xc8),
+            'success': function(_0x2eb7e1) {
+                var _0x2cabef = _0xc44ae0;
+                result = JSON[_0x2cabef(0x105)](_0x2eb7e1);
+                for (var _0x10282d in result) {
+                    $(_0x2cabef(0xe9) + result[_0x10282d]['id'])[_0x2cabef(0xdb)](result[_0x10282d][_0x2cabef(0xfa)]);
+                }
+            }
+        });
+    }
+
+    function myTimer() {
+        var _0x1121c4 = _0xc9e076,
+            _0x6c927c = _0x2383a0,
+            _0x4ec570 = new Date(),
+            _0x3beca0 = _0x4ec570[_0x6c927c(0x10b)]();
+        $(_0x6c927c(0xd7))[_0x1121c4(0x165)](0x3c - _0x3beca0), _0x3beca0 == 0x0 && loadlist();
+    }
+
+    function _0x57f7() {
+        var _0x3a2aa4 = _0xc9e076,
+            _0x4e81dc = [_0x3a2aa4(0x1ae), _0x3a2aa4(0x197), _0x3a2aa4(0x17d), _0x3a2aa4(0x191), 'btn\x20btn-primary', _0x3a2aa4(0x169), 'createElement', _0x3a2aa4(0x1b5), _0x3a2aa4(0x196), _0x3a2aa4(0x172), _0x3a2aa4(0x19b), _0x3a2aa4(0x18d), _0x3a2aa4(0x165), _0x3a2aa4(0x163), _0x3a2aa4(0x1bc), _0x3a2aa4(0x1a5), 'cursor', _0x3a2aa4(0x16d), _0x3a2aa4(0x17f), '110lroPBW', _0x3a2aa4(0x1a9), _0x3a2aa4(0x199), 'modal', '.turn[turn-tab=', _0x3a2aa4(0x1b6), '1562136MVPobH', 'GET', _0x3a2aa4(0x176), _0x3a2aa4(0x1a6), _0x3a2aa4(0x1a8), 'ready', _0x3a2aa4(0x175), _0x3a2aa4(0x184), _0x3a2aa4(0x1c0), _0x3a2aa4(0x180), _0x3a2aa4(0x16f), _0x3a2aa4(0x189), _0x3a2aa4(0x161), _0x3a2aa4(0x1c6), _0x3a2aa4(0x187), _0x3a2aa4(0x164), _0x3a2aa4(0x167), 'serialize', _0x3a2aa4(0x192), _0x3a2aa4(0x1c1), _0x3a2aa4(0x16a), _0x3a2aa4(0x185), _0x3a2aa4(0x188), _0x3a2aa4(0x19f), _0x3a2aa4(0x1a3), _0x3a2aa4(0x183), _0x3a2aa4(0x19c), 'data', _0x3a2aa4(0x1ac), _0x3a2aa4(0x1b8), 'show', _0x3a2aa4(0x1ab), _0x3a2aa4(0x1a0), 'Đã\x20sao\x20chép\x20số\x20điện\x20thoại\x20này.\x20Chúc\x20bạn\x20may\x20mắn.', 'body', _0x3a2aa4(0x168), _0x3a2aa4(0x17b), _0x3a2aa4(0x1c3), 'parse', _0x3a2aa4(0x170), _0x3a2aa4(0x19e), _0x3a2aa4(0x182), _0x3a2aa4(0x171), _0x3a2aa4(0x1a1), _0x3a2aa4(0x16b), _0x3a2aa4(0x1a7), 'value', _0x3a2aa4(0x17a), '#noticeModal', 'status', 'success', 'textarea', '#check_tranid', _0x3a2aa4(0x179), _0x3a2aa4(0x1be)];
+        return _0x57f7 = function() {
+            return _0x4e81dc;
+        }, _0x57f7();
+    }
+
+    function typeWriter(_0x1c3fa8, _0x1ca1b9) {
+        var _0x23e915 = _0xc9e076,
+            _0xb5dc41 = _0x2383a0,
+            _0x5b2ef8 = $('#' + _0x1c3fa8),
+            _0x508170 = _0x1ca1b9[a],
+            _0x91996 = _0x5b2ef8[_0xb5dc41(0xed)]('h3'),
+            _0x54759c = _0x5b2ef8[_0xb5dc41(0xed)]('h4');
+        if (!isBackspacing) {
+            if (i < _0x508170[_0xb5dc41(0xda)]) _0x508170[_0xb5dc41(0xd4)](i) == '|' ? (isParagraph = !![], _0x91996[_0x23e915(0x1c6)](_0x23e915(0x1bd)), _0x54759c[_0xb5dc41(0xc9)](_0xb5dc41(0xd6)), i++, setTimeout(function() {
+                typeWriter(_0x1c3fa8, _0x1ca1b9);
+            }, speedBetweenLines)) : (!isParagraph ? _0x91996[_0xb5dc41(0xd2)](_0x91996[_0x23e915(0x165)]() + _0x508170[_0x23e915(0x1bc)](i)) : _0x54759c[_0x23e915(0x165)](_0x54759c[_0xb5dc41(0xd2)]() + _0x508170[_0xb5dc41(0xd4)](i)), i++, setTimeout(function() {
+                typeWriter(_0x1c3fa8, _0x1ca1b9);
+            }, speedForward));
+            else i == _0x508170[_0xb5dc41(0xda)] && (isBackspacing = !![], setTimeout(function() {
+                typeWriter(_0x1c3fa8, _0x1ca1b9);
+            }, speedWait));
+        } else {
+            if (_0x91996[_0xb5dc41(0xd2)]()[_0xb5dc41(0xda)] > 0x0 || _0x54759c[_0x23e915(0x165)]()[_0x23e915(0x1a9)] > 0x0) {
+                if (_0x54759c[_0xb5dc41(0xd2)]()[_0x23e915(0x1a9)] > 0x0) _0x54759c['text'](_0x54759c[_0xb5dc41(0xd2)]()[_0xb5dc41(0x10a)](0x0, _0x54759c[_0xb5dc41(0xd2)]()[_0xb5dc41(0xda)] - 0x1));
+                else _0x91996[_0x23e915(0x165)]()[_0x23e915(0x1a9)] > 0x0 && (_0x54759c[_0xb5dc41(0xec)](_0xb5dc41(0xd6)), _0x91996[_0x23e915(0x191)](_0xb5dc41(0xd6)), _0x91996[_0xb5dc41(0xd2)](_0x91996[_0xb5dc41(0xd2)]()[_0xb5dc41(0x10a)](0x0, _0x91996[_0xb5dc41(0xd2)]()[_0xb5dc41(0xda)] - 0x1)));
+                setTimeout(function() {
+                    typeWriter(_0x1c3fa8, _0x1ca1b9);
+                }, speedBackspace);
+            } else isBackspacing = ![], i = 0x0, isParagraph = ![], a = (a + 0x1) % _0x1ca1b9[_0xb5dc41(0xda)], setTimeout(function() {
+                typeWriter(_0x1c3fa8, _0x1ca1b9);
+            }, 0x32);
+        }
+    }
+    var loopNotification = setInterval(getNotification, 0xea60);
+
+    function hi(_0x4621e1, _0x5e30c2, _0x3d7ffa) {
+        var _0x264044 = _0xc9e076;
+        showNNotification(_0x4621e1[_0x264044(0x19d)], _0x4621e1[_0x264044(0x1ad)], _0x4621e1[_0x264044(0x174)]);
+    }
+
+    function getNotification() {
+        var _0x48b4ab = _0xc9e076;
+        $[_0x48b4ab(0x183)]({
+            'type': _0x48b4ab(0x1af),
+            'url': _0x48b4ab(0x1bf),
+            'success': function(_0x338530) {
+                var _0x3322a3 = _0x48b4ab;
+                result = JSON['parse'](_0x338530), result['status'] == _0x3322a3(0x1b0) && result[_0x3322a3(0x195)]['forEach'](hi);
+            }
+        });
+    }
+
+    function showNNotification(_0x5868cd, _0x5b868e, _0x75e2a4) {
+        var _0x4ee3de = _0xc9e076;
+        new Notify({
+            'status': _0x4ee3de(0x1b0),
+            'title': _0x4ee3de(0x18f) + _0x5868cd,
+            'text': _0x4ee3de(0x1aa) + _0x5b868e + _0x4ee3de(0x162) + _0x75e2a4,
+            'autoclose': !![],
+            'customIcon': _0x4ee3de(0x1a2)
+        });
+    }
+
+    function check_tranid() {
+        var _0x2b6d51 = _0xc9e076,
+            _0xd45009 = _0x2383a0,
+            _0x128f7a = $(_0xd45009(0xc3))[_0xd45009(0xf0)]();
+        $[_0xd45009(0xf8)]({
+            'type': _0x2b6d51(0x164),
+            'url': _0xd45009(0xfb),
+            'data': _0x128f7a,
+            'success': function(_0x29e52c) {
+                var _0x8b8437 = _0x2b6d51,
+                    _0x3b6791 = _0xd45009;
+                result = JSON['parse'](_0x29e52c), document[_0x3b6791(0xd5)](_0x3b6791(0xf5))[_0x3b6791(0xe2)] = ![], result[_0x3b6791(0xc0)] == _0x8b8437(0x1b0) ? $(_0x3b6791(0xce))[_0x3b6791(0xc6)](_0x3b6791(0xcb), '')[_0x3b6791(0xc9)](_0x3b6791(0xe1))[_0x3b6791(0xdb)](result[_0x8b8437(0x1b6)]) : $(_0x8b8437(0x196))['attr'](_0x8b8437(0x169), '')[_0x3b6791(0xc9)](_0x8b8437(0x1b2))[_0x3b6791(0xdb)](result[_0x3b6791(0xde)]);
+            }
+        });
+    }
+
+    function refer_friends_check() {
+        var _0x479fc7 = _0xc9e076,
+            _0x49e6ad = $(_0x479fc7(0x1b7))[_0x479fc7(0x18c)]();
+        $[_0x479fc7(0x183)]({
+            'type': _0x479fc7(0x164),
+            'url': _0x479fc7(0x16c),
+            'data': _0x49e6ad,
+            'success': function(_0x2728c6) {
+                var _0x41ffd2 = _0x479fc7;
+                result = JSON[_0x41ffd2(0x177)](_0x2728c6), document['getElementById'](_0x41ffd2(0x188))[_0x41ffd2(0x1a6)] = ![], result[_0x41ffd2(0x1bb)] == _0x41ffd2(0x1b0) ? $('#result-check_refer_friends')[_0x41ffd2(0x1ae)](_0x41ffd2(0x169), '')[_0x41ffd2(0x191)](_0x41ffd2(0x176))[_0x41ffd2(0x199)](result[_0x41ffd2(0x1b6)]) : $(_0x41ffd2(0x1c2))[_0x41ffd2(0x1ae)](_0x41ffd2(0x169), '')[_0x41ffd2(0x191)](_0x41ffd2(0x1b2))[_0x41ffd2(0x199)](result[_0x41ffd2(0x1b6)]);
+            }
+        });
+    }
+
+    function choilanhan() {
+        var _0xd9df40 = _0xc9e076,
+            _0xbe6bb8 = _0x2383a0,
+            _0x2634cb = $(_0xd9df40(0x1c4))[_0xbe6bb8(0xf0)]();
+        $[_0xbe6bb8(0xf8)]({
+            'type': _0xbe6bb8(0xee),
+            'url': _0xbe6bb8(0xf1),
+            'data': _0x2634cb,
+            'success': function(_0x4f5043) {
+                var _0x175b80 = _0xd9df40,
+                    _0x594218 = _0xbe6bb8;
+                result = JSON[_0x594218(0x105)](_0x4f5043), document[_0x594218(0xd5)](_0x594218(0xf5))[_0x594218(0xe2)] = ![], result[_0x175b80(0x1bb)] == _0x594218(0xc1) ? $(_0x594218(0x108))['attr'](_0x175b80(0x169), '')[_0x175b80(0x191)](_0x594218(0xe1))[_0x175b80(0x199)](result[_0x594218(0xde)]) : $(_0x594218(0x108))[_0x594218(0xc6)](_0x594218(0xcb), '')['addClass'](_0x175b80(0x1b2))[_0x594218(0xdb)](result[_0x175b80(0x1b6)]);
+            }
+        });
+    }
+
+    function _0xd3c0() {
+        var _0x3d8b13 = ['attr', 'GET', 'success', 'toUTCString', 'alert\x20alert-danger', '32586QqreVL', '6454224YrxZaY', 'execCommand', 'msg', '#refer_friends', '2923092GhgehY', 'body', 'copy', 'status', 'charAt', 'cursor', 'absolute', '/api/giaodien/loadnoti.json', 'Hệ\x20thống\x20chẵn\x20lẻ\x20MoMo|Uy\x20tín,\x20giao\x20dịch\x20tự\x20động\x2024/7\x20!', '1222047KBjHIa', '#result-check_refer_friends', '623799IfTSVr', '#diemdanh', '591864YbBrEw', 'removeClass', '#myModal', '</b>\x20vừa\x20thắng\x20', '70edePqc', 'POST', 'text', 'readonly', ';path=/', 'indexOf', 'class', '#modalAlert', 'getSeconds', '/api/giaodien/refer_friends.json', '.coundown-time', 'push', '#phone-table', '.turn', 'click', '74598480RCoPJt', '665308FGLNYc', 'amount', 'active', 'alert\x20alert-success', 'parse', '88EBzpBm', '26veutGb', '3229165AqJbnk', 'expires=', '6cXKjiL', '/api/giaodien/loadlist.json', 'modal', 'select', 'getTime', '299180qonikW', '#result-check1', 'ajax', 'output', 'cookie', 'button[server-id=1]', 'children', 'submit', 'removeChild', '189olDiiF', '20911050PvnPJz', 'serialize', 'btn\x20btn-default', 'style', 'Trò\x20chơi:\x20', 'modal_alert', 'addClass', '/api/giaodien/diemdanh.json', 'shift', '1309194uyYlCk', 'noti', '#result-check', 'split', 'setAttribute', 'html', 'appendChild', '#modalGift', '18zCTMwd', 'game', '62189JPrIAY', '-9999px', 'server-id', 'substring', '<svg\x20xmlns=\x22http://www.w3.org/2000/svg\x22\x20id=\x22Layer_1\x22\x20data-name=\x22Layer\x201\x22\x20viewBox=\x220\x200\x2024\x2024\x22\x20width=\x22512\x22\x20height=\x22512\x22><path\x20d=\x22M19,9H14a5.006,5.006,0,0,0-5,5v5a5.006,5.006,0,0,0,5,5h5a5.006,5.006,0,0,0,5-5V14A5.006,5.006,0,0,0,19,9Zm-5,6a1,1,0,1,1,1-1A1,1,0,0,1,14,15Zm5,5a1,1,0,1,1,1-1A1,1,0,0,1,19,20ZM15.6,5,12.069,1.462A5.006,5.006,0,0,0,5,1.462L1.462,5a5.006,5.006,0,0,0,0,7.071L5,15.6a4.961,4.961,0,0,0,2,1.223V14a7.008,7.008,0,0,1,7-7h2.827A4.961,4.961,0,0,0,15.6,5ZM5,10A1,1,0,1,1,6,9,1,1,0,0,1,5,10ZM9,6a1,1,0,1,1,1-1A1,1,0,0,1,9,6Z\x22></path></svg>', 'tooltip', 'button[server-action=change]', 'getElementById', 'disabled', 'span[data-action=phan-thuong]', 'setTime', 'length', 'Chúc\x20mừng\x20<b>', '[data-toggle=\x22tooltip\x22]', '/api/giaodien/check.json', 'user'];
+        _0xd3c0 = function() {
+            return _0x3d8b13;
+        };
+        return _0xd3c0();
+    }
+
+    function _0x5a11(_0x2083de, _0x557fb5) {
+        var _0x3ef9eb = _0x57f7();
+        return _0x5a11 = function(_0x16cd88, _0x8a017a) {
+            _0x16cd88 = _0x16cd88 - 0xc0;
+            var _0x48f34a = _0x3ef9eb[_0x16cd88];
+            return _0x48f34a;
+        }, _0x5a11(_0x2083de, _0x557fb5);
+    }
+
+    function setCookie(_0x3fb679, _0x433924, _0x2d74b6) {
+        var _0x14a794 = _0xc9e076,
+            _0x588cea = _0x2383a0,
+            _0x5525b7 = new Date();
+        _0x5525b7[_0x588cea(0xe3)](_0x5525b7[_0x588cea(0xe8)]() + _0x2d74b6 * 0x3c * 0x3c * 0x3e8);
+        var _0x216585 = _0x588cea(0x103) + _0x5525b7[_0x14a794(0x1b1)]();
+        document[_0x588cea(0xf4)] = _0x3fb679 + '=' + _0x433924 + ';' + _0x216585 + _0x588cea(0xef);
+    }
+
+    function getCookie(_0x2c3a34) {
+        var _0x4c910b = _0xc9e076,
+            _0x5b1659 = _0x2383a0,
+            _0x4d0ef9 = _0x2c3a34 + '=',
+            _0x61089c = document[_0x4c910b(0x185)][_0x5b1659(0xc7)](';');
+        for (var _0x653fad = 0x0; _0x653fad < _0x61089c[_0x5b1659(0xda)]; _0x653fad++) {
+            var _0x37a591 = _0x61089c[_0x653fad];
+            while (_0x37a591[_0x5b1659(0xd4)](0x0) == '\x20') {
+                _0x37a591 = _0x37a591['substring'](0x1);
+            }
+            if (_0x37a591[_0x5b1659(0x102)](_0x4d0ef9) == 0x0) return _0x37a591[_0x4c910b(0x1a1)](_0x4d0ef9[_0x5b1659(0xda)], _0x37a591[_0x5b1659(0xda)]);
+        }
+        return ![];
+    }
+</script>
+<script src="https://cdn.jsdelivr.net/npm/simple-notify@0.5.4/dist/simple-notify.min.js"></script>		      <style>
+      @keyframes NotifiSweetIn {
+        from { margin-top: -100px; }
+        to { margin-top: 8px; }
+      }
+      @keyframes NotifiSweetOut {
+        from { margin-top: 8px; }
+        to { margin-top: -100px; }
+      }
+      .NotifiSweet{
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        color: var(--primary-text);
+        font-size: 14px;
+        font-variant: tabular-nums;
+        line-height: 1.5715;
+        list-style: none;
+        -moz-font-feature-settings: "tnum","tnum";
+        font-feature-settings: "tnum","tnum";
+        position: fixed;
+        top: 0px;
+        left: 0;
+        z-index: 1010;
+        width: 100%;
+        pointer-events: none;
+        z-index: 9999;  
+        text-align: center;
+      }
+      .NotifiSweet.center{
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      .NotifiSweet.top{
+        top: 0%;
+      }
+      .NotifiSweet.bottom{
+        top: unset;
+        bottom: 0%;
+      }
+      .NotifiSweet .NotifiSweet-notice{
+        padding: 8px;
+        text-align: center;
+        animation: NotifiSweetOut 0.5s linear;
+        margin-top: -100px;
+      }
+      .NotifiSweet .NotifiSweet-notice.active{
+        animation: NotifiSweetIn 0.5s linear;
+        margin-top: 0px;
+        display: block;
+      }
+      .NotifiSweet .NotifiSweet-notice .NotifiSweet-notice-content {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 0px;
+        padding: 10px 16px;
+        background: #fff;
+        color: #000;
+        font-size: 13px;
+        font-weight: 500;
+        border-radius: 2px;
+        -webkit-box-shadow: 0 3px 6px -4px #6f72af26,0 6px 16px 0 #6f72af1a,0 9px 28px 8px #6f72af1a; 
+        box-shadow: 0 3px 6px -4px #6f72af26,0 6px 16px 0 #6f72af1a,0 9px 28px 8px #6f72af1a; 
+        pointer-events: all;
+        line-height: 1.2em;
+      }
+      [template="dark"] .NotifiSweet .NotifiSweet-notice-content{
+        background: #202020;
+        color: #fff;
+      }
+      .NotifiSweet .NotifiSweet-notice.right{
+        text-align: right;
+      }
+      .NotifiSweet .NotifiSweet-notice.left{
+        text-align: left;
+      }
+      .NotifiSweet .NotifiSweet-notice .NotifiSweet-notice-content .context{
+        text-align: left;
+      }
+      
+      .NotifiSweet .NotifiSweet-notice .NotifiSweet-notice-content .name{
+        font-weight: 600; 
+      }
+      .NotifiSweet-notice .NotifiSweeticon {
+        position: relative;
+        top: 0px;
+        margin-right: 10px;
+        font-size: 16px;
+        color: #df384e;
+      }
+      .NotifiSweeticon.error{
+        color: #df384e;
+      }
+      .NotifiSweeticon.success{
+        color: #16b979;
+      }
+      </style>
+      <script>
+        var NotifiSweet = {
+          el: [],
+          timeout: 3000,
+          fire: function(obj){
+            var _ = this;
+            let _icon = '<div role="img" aria-label="close-circle" class="NotifiSweeticon NotifiSweeticon-close-circle error"><svg viewBox="64 64 896 896" focusable="false" data-icon="close-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm165.4 618.2l-66-.3L512 563.4l-99.3 118.4-66.1.3c-4.4 0-8-3.5-8-8 0-1.9.7-3.7 1.9-5.2l130.1-155L340.5 359a8.32 8.32 0 01-1.9-5.2c0-4.4 3.6-8 8-8l66.1.3L512 464.6l99.3-118.4 66-.3c4.4 0 8 3.5 8 8 0 1.9-.7 3.7-1.9 5.2L553.5 514l130 155c1.2 1.5 1.9 3.3 1.9 5.2 0 4.4-3.6 8-8 8z"></path></svg></div>';
+            if(obj.icon == 'success')
+            {
+              _icon = '<div role="img" aria-label="check-circle" class="NotifiSweeticon NotifiSweeticon-check-circle success"><svg viewBox="64 64 896 896" focusable="false" data-icon="check-circle" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448 448-200.6 448-448S759.4 64 512 64zm193.5 301.7l-210.6 292a31.8 31.8 0 01-51.7 0L318.5 484.9c-3.8-5.3 0-12.7 6.5-12.7h46.9c10.2 0 19.9 4.9 25.9 13.3l71.2 98.8 157.2-218c6-8.3 15.6-13.3 25.9-13.3H699c6.5 0 10.3 7.4 6.5 12.7z"></path></svg></div>';
+            }
+            var al = document.createElement("div");
+            var confirm_str = '';
+            if(typeof obj.confirm == "object"){
+              if(typeof obj.confirm[0] === undefined) obj.confirm[0] = "Confirm";
+              if(typeof obj.confirm[1] === undefined) obj.confirm[1] = "Cancel";
+              confirm_str = '<div class="confirm" style="padding: 10px;">';
+              obj.confirm.forEach((item) => {
+                confirm_str += '<a id="confirm_'+ item.id + '" href="javascript:;" style=" margin: 2px 5px; '+ item.style + '">'+ item.text + '</a>';
+              });
+              
+            }
+            al.innerHTML = '\
+            <div class="NotifiSweet-notice-content">'+_icon+'\
+              <div class="context">'+ (typeof obj.title !== undefined && obj.title ? '<div class="name">'+obj.title+'</div>':'') +'\
+              '+ (typeof obj.text !== undefined && obj.text ? '<div class="text">'+obj.text+'</div>':'') +'\
+              '+confirm_str+'\
+              </div>\
+            </div>';
+            al.classList.add("NotifiSweet-notice");
+            let _msgs = document.getElementById("NotifiSweet");
+            if(!_msgs)
+            {
+              _msgs = document.createElement("div");
+              _msgs.id = ("NotifiSweet");
+              _msgs.classList.add("NotifiSweet");
+              document.body.appendChild(_msgs);
+            }
+            _msgs.appendChild(al);
+            _.el.push(al);
+            al.classList.add("active");
+            if(obj.callback)
+            {
+              obj.callback();
+            }
+            if(typeof obj.confirm !== "object" || obj.confirm == null){
+              setTimeout(()=>{
+                _.close(al);
+              }, (_.timeout?_.timeout:3000));
+            }
+            else if(typeof obj.next !== undefined){
+              if(document.getElementById("confirm_next"))
+              {
+                document.getElementById("confirm_next").onclick = function(){
+                  obj.next();
+                  _.close(al);
+                }
+              }
+              if(document.getElementById("confirm_close"))
+              {
+                document.getElementById("confirm_close").onclick = function(){
+                  _.close(al);
+                }
+              }
+            }
+          },
+          close: function(_obj){
+            var _ = this;
+            _obj.classList.remove("active");
+            setTimeout(()=>{
+              if(_obj) _obj.outerHTML = "";
+            }, 500);
+          }
+        }
+      </script>
+      	</body>
+</html>
